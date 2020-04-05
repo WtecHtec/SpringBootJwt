@@ -11,23 +11,23 @@
 
 
        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                        connectionURL="jdbc:mysql://localhost:3306/spring"
+                        connectionURL="jdbc:mysql://localhost:3306/borrowmoney"
                         userId="root"
-                        password="123456">
+                        password="qwer8748">
         </jdbcConnection>
         <!-- <jdbcConnection driverClass="com.mysql.jdbc.Driver"
 			connectionURL="jdbc:mysql://rm-bp13x1v75q3102v74fo.mysql.rds.aliyuncs.com:3306/anxuebao_test" userId="anxuebao"
 			password="axb_2017" /> -->
         <!-- 对于生成的pojo所在包 -->
-        <javaModelGenerator targetPackage="com.example.demo.dao.pojo" targetProject="demo/src/main/java"/>
+        <javaModelGenerator targetPackage="com.example.demo.dao.pojo" targetProject="SpringBootJwt-master/src/main/java"/>
 
 		<!-- 对于生成的mapper所在目录 -->
-        <sqlMapGenerator targetPackage="mapper" targetProject="demo/src/main/resources" >
+        <sqlMapGenerator targetPackage="mapper" targetProject="SpringBootJwt-master/src/main/resources" >
         	<property name="enableSubPackages" value="true" />
         </sqlMapGenerator>
 
 		<!-- 配置mapper对应的java映射 -->
-        <javaClientGenerator targetPackage="com.example.demo.dao.mapper" targetProject="demo/src/main/java"
+        <javaClientGenerator targetPackage="com.example.demo.dao.mapper" targetProject="SpringBootJwt-master/src/main/java"
                              type="XMLMAPPER"/>
 		<!--生成对应表及类名-->
     <table tableName="%" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
